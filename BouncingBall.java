@@ -25,7 +25,7 @@ public class BouncingBall extends JFrame {
 	private static final int UPDATETIME = 5;
 	private DrawingCanvas canvas;
 	int x = 50, y = 50;
-	int size = 50;
+	int size = 10;
 	int xSpeed = 1, ySpeed = 2;
 	Color[] ballColorArray = { Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW, Color.GRAY, Color.PINK, Color.BLACK };
 	Color ballColor = Color.BLACK;
@@ -111,7 +111,7 @@ public class BouncingBall extends JFrame {
 			g.fillOval(x, y, size, size);
 			//Mouse trail
 			g.setColor(Color.BLUE);
-			g.fillOval(mouseX-10, mouseY-10, 20, 20);
+			g.fillOval(mouseX-10, mouseY-10, 20, 20,true);
 		}
 	}
 }
